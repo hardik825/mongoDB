@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hardik825/mongoDB#readme",
   "dependencies": {
-    "mongoose": "^6.4.5"
+    "mongoose": "^6.4.5",
+    "validator": "^13.7.0"
   }
 }
