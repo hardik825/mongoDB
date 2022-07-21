@@ -1,0 +1,23 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongoose.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardik825/mongoDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardik825/mongoDB/issues"
+  },
+  "homepage": "https://github.com/hardik825/mongoDB#readme",
+  "dependencies": {
+    "mongoose": "^6.4.5",
+    "validator": "^13.7.0"
+  }
+}
