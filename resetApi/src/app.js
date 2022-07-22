@@ -64,14 +64,13 @@ app.get("/students/:id", async (req, res) => {
   }
 });
 
-
 //update the students by it id
 
 app.patch("/students/:id", async (req, res) => {
   try {
     const _id = req.params.id;
-    const UapdateStudent = await Student.findByIdAndUpdate(_id, req.body,{
-      new:true
+    const UapdateStudent = await Student.findByIdAndUpdate(_id, req.body, {
+      new: true,
     });
     res.send(UapdateStudent);
   } catch (e) {
@@ -79,6 +78,19 @@ app.patch("/students/:id", async (req, res) => {
   }
 });
 
+//delete
+
+app.delete("/students/:id", async (req, res) => {
+  try {
+    const deleteStudent = await Student.findByIdAndDelete(req.params.id);
+    if (req.params.id) {
+      return res.status(400).send();
+    }
+    res.send(deleteStudent);
+  } catch (e) {
+    res.status(400).send(e);
+  }
+});
 
 // listen
 
